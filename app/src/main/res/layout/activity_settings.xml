@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    style="@style/ScreenBackground">
+
+    <!-- CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        style="@style/CardBackground">
+
+        <!-- Card Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                style="@style/TextColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Content Here"
+                style="@style/TextColor"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Switch -->
+
+    <!-- Textview -->
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchMode"
+        android:layout_marginTop="16dp"
+        android:text="Switch State: "
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        style="@style/TextColor"/>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:text="next"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/broadcaster"
+        android:layout_width="234dp"
+        android:layout_height="171dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="92dp"
+        android:onClick="onBroadcastSendBtnCLicked"
+        android:layout_marginBottom="161dp"
+        android:text="broadcaster" />
+</RelativeLayout>

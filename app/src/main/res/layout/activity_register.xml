@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="true"
+    tools:context=".RegisterActivity">
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img"
+        android:contentDescription="My Image Button"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="40dp"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:id="@+id/backBtn"
+        android:forceDarkAllowed="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      Let's get you stated !"
+        android:textSize="34sp"
+        android:textColor="#999999"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/startedTxt"
+        android:forceDarkAllowed="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textSize="18sp"
+        android:layout_below="@+id/startedTxt"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@+id/startedTxt"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:id="@+id/firstNameTxt"
+        android:forceDarkAllowed="true"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="\tFirst Name"
+        android:inputType="textEmailAddress"
+        android:layout_alignLeft="@+id/firstNameTxt"
+        android:layout_below="@+id/firstNameTxt"
+        android:background="#B2BEB5"
+        android:id="@+id/userFirstName"
+        android:forceDarkAllowed="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textSize="18sp"
+        android:layout_below="@+id/startedTxt"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/userFirstName"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:id="@+id/lastNameTxt"
+        android:forceDarkAllowed="true"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="\tLast Name"
+        android:inputType="textEmailAddress"
+        android:layout_alignLeft="@+id/lastNameTxt"
+        android:layout_below="@+id/lastNameTxt"
+        android:background="#B2BEB5"
+        android:id="@+id/userLastName"
+        android:forceDarkAllowed="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/userFirstName"
+        android:layout_alignStart="@+id/userFirstName"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:id="@+id/userMailTxt"
+        android:forceDarkAllowed="true"
+        />
+    <EditText
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:hint="\tExample@mail.com"
+        android:inputType="textEmailAddress"
+        android:layout_alignStart="@+id/firstNameTxt"
+        android:layout_below="@+id/userMailTxt"
+        android:background="#B2BEB5"
+        android:id="@+id/userMail"
+        android:forceDarkAllowed="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="18sp"
+        android:layout_below="@+id/userMail"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/startedTxt"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:id="@+id/userPasswordTxt"
+        android:forceDarkAllowed="true"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="\tPassword"
+        android:inputType="textPassword"
+        android:layout_alignLeft="@+id/firstNameTxt"
+        android:layout_below="@+id/userPasswordTxt"
+        android:background="#B2BEB5"
+        android:id="@+id/userPassword"
+        android:forceDarkAllowed="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Re-Enter Password"
+        android:textSize="18sp"
+        android:layout_below="@+id/userMail"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/userPassword"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:id="@+id/userPasswordTxt2"
+        android:forceDarkAllowed="true"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="\tRe-Enter Password"
+        android:inputType="textPassword"
+        android:layout_toEndOf="@id/userPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/userPasswordTxt2"
+        android:background="#B2BEB5"
+        android:id="@+id/userPassword2"
+        android:forceDarkAllowed="true"
+        />
+
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userPassword"
+        android:layout_marginTop="15dp"
+        android:id="@+id/registerBtn"
+        android:forceDarkAllowed="true"
+        />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Already have an Account?"
+        android:textSize="14sp"
+        android:textColor="#0000FF"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/registerBtn"
+        android:id="@+id/alreadyBtn"
+        android:forceDarkAllowed="true"
+        />
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/alreadyBtn"
+        android:id="@+id/progressBar"
+        />
+</RelativeLayout>

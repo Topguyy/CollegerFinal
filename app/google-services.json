@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "457217269792",
+    "project_id": "colleger-be55b",
+    "storage_bucket": "colleger-be55b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457217269792:android:ea18ae3fe9b2f668b6dc45",
+        "android_client_info": {
+          "package_name": "com.example.colleger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqeOc-99ILVoqb_1uz6tZ6FL0W_ev6E2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

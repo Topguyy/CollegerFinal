@@ -1,0 +1,67 @@
+<!-- activity_course_list.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseListActivity">
+
+    <ListView
+        android:id="@+id/courseListView"
+        android:layout_width="340dp"
+        android:layout_height="524dp"
+        android:layout_below="@+id/addCourseButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/addCourseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/semesterTitleTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="273dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="15dp"
+        android:text="Add Course" />
+
+    <TextView
+        android:id="@+id/semesterTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="232dp"
+        android:text="Semester: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/semesterGPA"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="42dp"
+        android:text="GPA: "
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="78dp"
+        android:text="Back" />
+
+</RelativeLayout>

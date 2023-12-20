@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Colleger</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Calender</string>
+    <string name="title_notifications">Profile</string>
+    <string name="select_credit_hours">Select Credit Hours</string>
+    <string name="select_grade">Select Grade</string>
+</resources>

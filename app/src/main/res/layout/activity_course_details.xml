@@ -1,0 +1,99 @@
+<!-- activity_course_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseDetailsActivity">
+
+    <Button
+        android:id="@+id/saveCourseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="73dp"
+        android:text="Save Course" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="518dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="186dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/courseNameEditText"
+                android:layout_width="328dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="14dp"
+                android:hint="Course Name" />
+
+            <Spinner
+                android:id="@+id/creditHoursSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:entries="@array/credit_hours_array"
+                android:prompt="@string/select_credit_hours" />
+
+            <EditText
+                android:id="@+id/professorNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp"
+                android:hint="Professor Name" />
+
+            <Spinner
+                android:id="@+id/gradeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:entries="@array/grades_array"
+                android:prompt="@string/select_grade" />
+
+            <EditText
+                android:id="@+id/lectureDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Lecture Date" />
+
+            <EditText
+                android:id="@+id/lectureTimeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Lecture Time" />
+
+            <EditText
+                android:id="@+id/sectionDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:hint="Section Date" />
+
+            <EditText
+                android:id="@+id/sectionTimeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Section Time" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
