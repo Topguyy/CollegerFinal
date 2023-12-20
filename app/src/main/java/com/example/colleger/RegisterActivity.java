@@ -2,7 +2,10 @@ package com.example.colleger;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -18,12 +21,14 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
+    SharedPreferences sp ;
+    String name , emailAddress ;
     private ImageButton backBtn ;
     private Button registerBtn;
     private Button alreadyBtn;
     private EditText userFirstName,userLastName,userMail,userPassword,userPassword2 ;
     private ProgressBar progressBar ;
-    FirebaseAuth mAuth ;
+    static public FirebaseAuth mAuth ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
         alreadyBtn=findViewById(R.id.alreadyBtn);
         userFirstName = findViewById(R.id.userFirstName);
         userLastName = findViewById(R.id.userLastName);
+        sp = getSharedPreferences("userData", Context.MODE_PRIVATE);
         userMail = findViewById(R.id.userMail);
         userPassword = findViewById(R.id.userPassword);
         userPassword2 = findViewById(R.id.userPassword2);
@@ -45,6 +51,12 @@ public class RegisterActivity extends AppCompatActivity {
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                name = userFirstName.getText().toString().trim();
+                emailAddress = userMail.getText().toString().trim();
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString("name",name);
+                editor.putString("email",emailAddress);
+                editor.commit();
                 String email = userMail.getText().toString().trim();
                 String firstName = userFirstName.getText().toString().trim();
                 String lastName = userLastName.getText().toString().trim();

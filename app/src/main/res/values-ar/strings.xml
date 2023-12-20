@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Colleger</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_dashboard">التقويم</string>
+    <string name="title_notifications">الحساب</string>
+    <string name="select_credit_hours">الساعات المعتمدة</string>
+    <string name="select_grade">التقدير</string>
+</resources>

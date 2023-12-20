@@ -34,7 +34,9 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/userNameAppearrr"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,7 +44,9 @@
             android:layout_marginBottom="16dp"
             android:text="Name@gmail.com"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:id="@+id/userMailAppearrr"
+            />
 
     </LinearLayout>
 
@@ -83,10 +87,11 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.077" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="90dp"
-        android:layout_height="39dp"
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
         android:text="LogOut"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,6 +99,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintVertical_bias="0.207"
+        android:id="@+id/logoutBtn"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
